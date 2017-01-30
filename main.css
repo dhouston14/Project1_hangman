@@ -1,0 +1,38 @@
+body {
+  background: orange;
+  text-align: center;
+}
+
+/*.img {
+  background-color: orange;
+  color:white;
+  border: white dashed 2px;
+  padding:15px;
+}*/
+
+/*//add limbs to this class*/
+#hangman {
+  background-image: url("../hangman.png");
+  width: 200px;
+  height: 200px;
+  color: grey;
+  border: white dashed 2px;
+  padding: 15px;
+}
+
+p {
+  text-align: center;
+}
+
+input[type="button"] {
+position: relative;
+padding: 20px;
+margin: 10px 0px 0px 0px;
+text-align: center;
+}
+
+input[type="text"] {
+position: relative;
+margin: 10px 0px 0px 0px;
+text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dominick's Hangman</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+    <header> Dom's Hangman</header>
+      <h1>Complete the Game by guessing the words for each question!</h1>
+
+      <p>Play Ball...</p>
+
+  </body>
+
+    <script type="text/javascript" src="gameOptions.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <p id="wrongAnswer">Wrong Letters:</p>
+    <!-- <p src=id"hangman"></p> -->
+    <img src="hangman.png" id="hangman"><br />
+    <input name="enter" type="button" value="Guess" onClick="pruefeZeichen()">
+    <input name="submit" type="text" size="10" maxlength="1">
+    <br>
+    <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+</html>
