@@ -3,36 +3,82 @@ body {
   text-align: center;
 }
 
-/*.img {
-  background-color: orange;
-  color:white;
-  border: white dashed 2px;
-  padding:15px;
-}*/
-
-/*//add limbs to this class*/
-#hangman {
-  background-image: url("../hangman.png");
-  width: 200px;
-  height: 200px;
-  color: grey;
-  border: white dashed 2px;
-  padding: 15px;
-}
-
-p {
+main {
   text-align: center;
 }
 
-input[type="button"] {
-position: relative;
-padding: 20px;
-margin: 10px 0px 0px 0px;
-text-align: center;
+/*.img {
+  text-align: center;
+  background-color: orange;
+  color:white;
+  border: white dashed 2px;
+  padding:5px;
+}*/
+
+#hangman {
+  /*background-image: url("hangman.png");*/
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  padding: 30px;
+  width: 200px;
+  height: 150px;
+  color: grey;
+  border: black solid 2px;
+  /*padding: 15px;*/
 }
 
-input[type="text"] {
-position: relative;
-margin: 10px 0px 0px 0px;
-text-align: center;
+/*p {
+  text-align: center;
+  position: relative;
+}*/
+
+#wrongAnswer {
+  margin: 20px;
+  padding: 10px 10px 10px 20px;
+  text-align: center;
+  position: relative;
 }
+
+input {
+  background-color: black;
+  color: white;
+}
+
+span {
+  font-style: italic;
+  font-size: 20px;
+
+}
+
+button {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  /*margin: auto;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.letters {
+  text-align: center;
+  display: flex;
+  /*float: right;*/
+  /*width: 300px;*/
+  height: 25px;
+  padding: 10px;
+  background: #E7E5DB;
+  margin: 0;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+/*input[name="displayWord"] {
+  cursor:no-drop;
+  width:200px;
+  font-size:18px;
+}*/
+
+/*//add limbs to this class*/

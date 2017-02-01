@@ -1,29 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dominick's Hangman</title>
+<head>
+  <meta charset="utf-8">
+  <title>Dom's Hangman</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
 
-  </head>
-  <body>
-    <header> Dom's Hangman</header>
-      <h1>Complete the Game by guessing the words for each question!</h1>
+<main>
+  <body onLoad="reset(); return true;">
 
-      <p>Play Ball...</p>
+    <h2>Dom's Hangman</h2>
 
-  </body>
+    <form name="game">
+	     <p>
+		       <span>Display Word:   </span><input type="text" name="displayWord" disabled></input>
+		<br>
+		<br>
+		       <span>Letters Clicked:   </span><input type="text" name="usedLetters" disabled ></input>
+	</p>
+</form>
 
-    <script type="text/javascript" src="gameOptions.js"></script>
-    <script type="text/javascript" src="jquery.js"></script>
+<p>
 
-    <p id="wrongAnswer">Wrong Letters:</p>
-    <!-- <p src=id"hangman"></p> -->
-    <img src="hangman.png" id="hangman"><br />
-    <input name="enter" type="button" value="Guess" onClick="pruefeZeichen()">
-    <input name="submit" type="text" size="10" maxlength="1">
-    <br>
-    <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+<a href="javascript:game('A');"><input type="button" value="A"></a>
+<a href="javascript:game('B');"><input type="button" value="B"></a>
+<a href="javascript:game('C');"><input type="button" value="C"></a>
+<a href="javascript:game('D');"><input type="button" value="D"></a>
+<a href="javascript:game('E');"><input type="button" value="E"></a>
+<a href="javascript:game('F');"><input type="button" value="F"></a>
+<a href="javascript:game('G');"><input type="button" value="G"></a>
+<a href="javascript:game('H');"><input type="button" value="H"></a>
+<a href="javascript:game('I');"><input type="button" value="I"></a>
+<a href="javascript:game('J');"><input type="button" value="J"></a>
+<br>
+<br>
+<a href="javascript:game('K');"><input type="button" value="K"></a>
+<a href="javascript:game('L');"><input type="button" value="L"></a>
+<a href="javascript:game('M');"><input type="button" value="M"></a>
+<a href="javascript:game('N');"><input type="button" value="N"></a>
+<a href="javascript:game('O');"><input type="button" value="O"></a>
+<a href="javascript:game('P');"><input type="button" value="P"></a>
+<a href="javascript:game('Q');"><input type="button" value="Q"></a>
+<a href="javascript:game('R');"><input type="button" value="R"></a>
+<a href="javascript:game('S');"><input type="button" value="S"></a>
+<br>
+<br>
+<a href="javascript:game('T');"><input type="button" value="T"></a>
+<a href="javascript:game('U');"><input type="button" value="U"></a>
+<a href="javascript:game('V');"><input type="button" value="V"></a>
+<a href="javascript:game('W');"><input type="button" value="W"></a>
+<a href="javascript:game('X');"><input type="button" value="X"></a>
+<a href="javascript:game('Y');"><input type="button" value="Y"></a>
+<a href="javascript:game('Z');"><input type="button" value="Z"></a>
+
+</p>
+
+<p>
+	<img id="hangman" src="hangman.png" value="hangman">
+</p>
+
+<br>
+
+<p>
+<a href="javascript:reset()"><input type="button" value="New Game"></a>
+</p>
+
+
+<script type="text/javascript" src="gameOptions.js"></script>
+
+</body>
+</main>
+
 </html>
